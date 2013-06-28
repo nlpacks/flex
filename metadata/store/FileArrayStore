@@ -1,0 +1,44 @@
+{
+    "type": "arraystore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoLoad": false,
+        "model": "FileGridModel",
+        "storeId": "MyArrayStore",
+        "designer|userClassName": "FileArrayStore",
+        "data": null
+    },
+    "designerId": "40455b94-2e17-4ada-ad90-abb075c5592b",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy1"
+            },
+            "designerId": "a659ab16-8955-4852-a305-76286222f46d",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Array",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyArrayReader"
+                    },
+                    "designerId": "c7a62a5d-6549-4527-a9eb-e9bbe88a036e"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "type": "Ext.data.TreeStore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "model": "FileTreeModel",
+        "storeId": "MyTreeStore1",
+        "designer|userClassName": "FileTreeStore",
+        "defaultRootId": null,
+        "defaultRootText": null,
+        "nodeParam": "path",
+        "root": [
+            "{",
+            "    text: 'cellonflex',",
+            "    leaf: false,",
+            "    expandable: true,",
+            "    expanded: true",
+            "}"
+        ]
+    },
+    "designerId": "cb7f94a7-dbe5-4f63-9677-a6f105918dd2",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "url": "filenodes.php"
+            },
+            "designerId": "c580d0d4-fa01-4cf4-ad17-796e42bb7bf7",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "designerId": "c58a8e73-c388-4b42-a155-f5764d891b7d"
+                }
+            ]
+        }
+    ]
+}

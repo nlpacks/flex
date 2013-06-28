@@ -1,0 +1,90 @@
+{
+    "type": "Ext.grid.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "id": "showfiles",
+        "designer|userClassName": "FileGridPanel",
+        "title": "My Grid Panel",
+        "store": "FileArrayStore"
+    },
+    "designerId": "b8d2a458-d3ab-4e89-af80-55c60c55b729",
+    "cn": [
+        {
+            "type": "Ext.grid.column.Column",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 264,
+                "designer|userClassName": "MyColumn1",
+                "dataIndex": "name",
+                "text": "name"
+            },
+            "designerId": "062fb322-1699-4bc9-9d6e-7d20cf694ae5"
+        },
+        {
+            "type": "Ext.grid.column.Number",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 138,
+                "designer|userClassName": "MyNumberColumn1",
+                "dataIndex": "size",
+                "text": "size",
+                "format": null
+            },
+            "designerId": "082a25f3-feaf-471a-b058-b47d80b1e5df"
+        },
+        {
+            "type": "Ext.grid.column.Date",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "width": 307,
+                "designer|userClassName": "MyDateColumn",
+                "dataIndex": "lastmodify",
+                "text": "date modify",
+                "format": "Y-m-d H:i:s"
+            },
+            "designerId": "1ba9a9ff-176b-4934-ba59-659fbf80b78b"
+        },
+        {
+            "type": "Ext.grid.View",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView1"
+            },
+            "designerId": "446d3690-037a-4df1-815a-0e4389673f73"
+        },
+        {
+            "type": "Ext.selection.CheckboxModel",
+            "reference": {
+                "name": "selModel",
+                "type": "object"
+            },
+            "codeClass": "Ext.selection.CheckboxModel",
+            "userConfig": {
+                "designer|userClassName": "MyCheckboxSelectionModel",
+                "designer|displayName": null,
+                "showHeaderCheckbox": true
+            },
+            "designerId": "6d1dbb73-da0a-4550-8c6e-f67ed9bc9868"
+        }
+    ]
+}

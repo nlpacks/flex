@@ -1,0 +1,96 @@
+{
+    "name": "flex",
+    "settings": {},
+    "xdsVersion": "2.2.2",
+    "xdsBuild": 991,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000503,
+    "framework": "ext42",
+    "topInstanceFileMap": {
+        "b8d2a458-d3ab-4e89-af80-55c60c55b729": {
+            "paths": [
+                "metadata/view/FileGridPanel",
+                "app/view/override/FileGridPanel.js",
+                "app/view/FileGridPanel.js"
+            ],
+            "className": "FileGridPanel"
+        },
+        "2f9a5507-29ba-42d8-bc58-5172bcead7ab": {
+            "paths": [
+                "metadata/view/fileexplorer",
+                "app/view/override/fileexplorer.js",
+                "app/view/fileexplorer.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "fileexplorer"
+        },
+        "69c05989-e334-4659-8f60-1ee5690b7ad7": {
+            "paths": [
+                "metadata/view/loginform",
+                "app/view/override/loginform.js",
+                "app/view/loginform.js"
+            ],
+            "className": "loginform"
+        },
+        "40455b94-2e17-4ada-ad90-abb075c5592b": {
+            "paths": [
+                "metadata/store/FileArrayStore",
+                "app/store/override/FileArrayStore.js",
+                "app/store/FileArrayStore.js"
+            ],
+            "className": "FileArrayStore"
+        },
+        "cb7f94a7-dbe5-4f63-9677-a6f105918dd2": {
+            "paths": [
+                "metadata/store/FileTreeStore",
+                "app/store/override/FileTreeStore.js",
+                "app/store/FileTreeStore.js"
+            ],
+            "className": "FileTreeStore"
+        },
+        "3cb903a9-2b0e-4937-a959-6a4925769c72": {
+            "paths": [
+                "metadata/model/FileGridModel",
+                "app/model/override/FileGridModel.js",
+                "app/model/FileGridModel.js"
+            ],
+            "className": "FileGridModel"
+        },
+        "fd9b399c-e6e2-4274-9e68-ec603f0b1fd5": {
+            "paths": [
+                "metadata/model/FileTreeModel",
+                "app/model/override/FileTreeModel.js",
+                "app/model/FileTreeModel.js"
+            ],
+            "className": "FileTreeModel"
+        },
+        "6dc0ecd4-e83a-4fce-9567-75fc5a49a8b5": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "b8d2a458-d3ab-4e89-af80-55c60c55b729",
+            "2f9a5507-29ba-42d8-bc58-5172bcead7ab",
+            "69c05989-e334-4659-8f60-1ee5690b7ad7"
+        ],
+        "store": [
+            "40455b94-2e17-4ada-ad90-abb075c5592b",
+            "cb7f94a7-dbe5-4f63-9677-a6f105918dd2"
+        ],
+        "controller": [],
+        "model": [
+            "3cb903a9-2b0e-4937-a959-6a4925769c72",
+            "fd9b399c-e6e2-4274-9e68-ec603f0b1fd5"
+        ],
+        "resource": [
+            "6dc0ecd4-e83a-4fce-9567-75fc5a49a8b5"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

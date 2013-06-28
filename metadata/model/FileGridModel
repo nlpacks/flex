@@ -1,0 +1,59 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FileGridModel"
+    },
+    "designerId": "3cb903a9-2b0e-4937-a959-6a4925769c72",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string",
+                "designer|userClassName": "MyField7"
+            },
+            "designerId": "8c0bf80c-2547-4b95-b963-45682632fc8e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "size",
+                "type": "int",
+                "designer|userClassName": "MyField7"
+            },
+            "designerId": "f9fbc470-7ce1-4704-9b9b-4561946810a5"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dateFormat": "Y-m-d H:i:s",
+                "dateReadFormat": null,
+                "dateWriteFormat": null,
+                "name": "lastmodify",
+                "type": "date",
+                "designer|userClassName": "MyField7"
+            },
+            "designerId": "f38f09d4-2efb-439a-8088-15e2a0bec6dd"
+        }
+    ]
+}

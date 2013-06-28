@@ -1,0 +1,9 @@
+{
+    "type": "libraryresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "designerId": "6dc0ecd4-e83a-4fce-9567-75fc5a49a8b5"
+}

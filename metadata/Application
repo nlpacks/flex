@@ -1,0 +1,25 @@
+{
+    "type": "Ext.app.Application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "FileGridModel"
+        ],
+        "stores": [
+            "FileTreeStore",
+            "FileArrayStore"
+        ],
+        "views": [
+            "loginform",
+            "fileexplorer",
+            "FileGridPanel"
+        ],
+        "autoCreateViewport": true,
+        "name": "MyApp"
+    },
+    "designerId": "application"
+}

@@ -1,0 +1,115 @@
+{
+    "type": "Ext.form.Panel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|align": "center",
+        "container|pack": "center",
+        "height": 136,
+        "id": "loginform",
+        "width": 305,
+        "designer|userClassName": "loginform",
+        "layout": "vbox",
+        "bodyPadding": 10,
+        "title": "login with your domain account",
+        "method": "POST",
+        "url": "login.php"
+    },
+    "designerId": "69c05989-e334-4659-8f60-1ee5690b7ad7",
+    "cn": [
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "username",
+                "name": "username"
+            },
+            "designerId": "e3ed6be1-9435-4748-ba85-1492b5e07466"
+        },
+        {
+            "type": "Ext.form.field.Text",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": "password",
+                "name": "password",
+                "inputType": "password"
+            },
+            "designerId": "d8964a2c-78d1-4555-a7bc-3e9adf567d03"
+        },
+        {
+            "type": "Ext.button.Button",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "text": "login"
+            },
+            "designerId": "96358b85-af67-41a4-ac42-e80390ccbf86",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "handler",
+                        "designer|params": [
+                            "button",
+                            "event"
+                        ],
+                        "implHandler": [
+                            "var form = this.up('form').getForm(); // get the basic form",
+                            "if (form.isValid()) { // make sure the form contains valid data before submitting",
+                            "    form.submit({",
+                            "        success: function(form, action) {",
+                            "",
+                            "            form.owner.hide();",
+                            "",
+                            "            var mainview=new Ext.create('MyApp.view.fileexplorer');",
+                            "            mainview.show();",
+                            "        },",
+                            "        failure: function(form, action) {",
+                            "            Ext.Msg.alert('Failed', action.result.msg);",
+                            "        }",
+                            "    });",
+                            "}"
+                        ]
+                    },
+                    "designerId": "b92a4a9b-ecc8-47d1-8429-07194aefb4e3"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onLoginformAfterRender",
+                "implHandler": [
+                    "this.center();"
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "designerId": "6548b7c1-ccd9-4a24-bef3-edebae458268"
+        }
+    ]
+}
